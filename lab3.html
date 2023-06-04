@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>SOLUTION OF MATHEMATICAL EXPRESSION</title>
+<script type="text/javascript">
+function calc()
+{
+document.formExp.result.value=eval(document.formExp.Expr.value)
+}
+</script>
+</head>
+<body>
+<form name="formExp">
+Enter a mathematical expression in the textbox, click on calculate button to display the result<br>
+<table cellpadding="4" cellspacing="0" height=100 width=200 bgcolor="white">
+<tr>
+<td><input type="text" size="20" name="Expr"></td>
+<td><input type="button" name="calculate" value="calculate" onClick="calc()"></td>
+</tr>
+<tr>
+<td><b>Result</b><input type="text' size="20" name="Result"></td>
+<td><input type="Reset" name="Reset" value="reset">
+</td>
+</tr>
+</table>
+<p>Click on reset button to enter another new expression</p>
+</form>
+</body>
+</html>
+
